@@ -79,7 +79,7 @@ main {
 .product-container {
   display: flex;
   flex-direction: column;
-  gap: 1.4rem;
+  gap: 1.8rem;
   margin: 3rem;
 }
 
