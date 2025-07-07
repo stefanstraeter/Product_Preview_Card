@@ -1,0 +1,152 @@
+/* General Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  /* Colors */
+  --white: #ffffff;
+  --green-500: #3c8067;
+  --green-700: #1b4133;
+  --black-500: #1c232b;
+  --grey-500: #6c7289;
+  --cream-200: #f2ebe3;
+
+  /*Typography */
+  --font-family-body: "Montserrat", sans-serif;
+  --font-family-headlines: "Fraunces", serif;
+
+  /* Font Weights */
+  --weight-300: 300;
+  --weight-500: 500;
+  --weight-700: 700;
+}
+
+/* Mobile Design */
+html {
+  font-family: var(--font-family-body);
+  font-size: 62.5%; /* 16px * 0.625 = 10px */
+  text-wrap: wrap;
+}
+
+body {
+  font-size: 1.4rem; /* 14px */
+  line-height: 1.4;
+  background-color: var(--cream-200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 5vw, 3.2rem); /* 24px to 32px */
+  line-height: 1.2;
+  font-family: var(--font-family-headlines);
+  color: var(--black-500);
+}
+
+.product-category {
+  font-size: clamp(1rem, 2vw, 1.5rem); /* 10px to 20px */
+  line-height: 1.2;
+  font-family: var(--font-family-body);
+  font-weight: var(--weight-300);
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+main {
+  background-color: var(--white);
+  border-radius: 8px;
+  width: clamp(20rem, 95%, 45rem);
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  margin: 3rem;
+}
+
+.price-tag-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+}
+
+.price-tag {
+  font-family: var(--font-family-headlines);
+  font-size: 2.8rem; /* 28px */
+  font-weight: var(--weight-700);
+  color: var(--green-500);
+}
+
+.old-price-tag {
+  font-family: var(--font-family-body);
+  font-size: 1.2rem;
+  text-decoration: line-through;
+}
+
+/* Components */
+.img-flacon {
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+}
+
+.button-add-to-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: var(--green-500);
+  padding: 1rem 4rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.button-add-to-cart:hover {
+  background: var(--green-700);
+  text-decoration: none;
+}
+
+.button-text {
+  color: var(--white);
+  font-weight: var(--weight-500);
+  font-size: 1.4rem;
+}
+
+/* Desktop Design */
+@media (min-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 600px;
+  }
+
+  .product-container {
+    justify-content: center;
+  }
+
+  .img-flacon {
+    border-radius: 8px 0 0 8px;
+  }
+}
