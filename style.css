@@ -73,7 +73,7 @@ p {
 main {
   background-color: var(--white);
   border-radius: 8px;
-  width: clamp(20rem, 95%, 45rem);
+  width: clamp(20rem, 95%, 40rem);
 }
 
 .product-container {
