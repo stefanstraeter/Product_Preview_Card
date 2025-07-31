@@ -18,7 +18,6 @@ Users should be able to:
 
 ### Screenshot
 <img width="1094" height="689" alt="Product preview card_desktop" src="https://github.com/user-attachments/assets/ba5e9246-99d0-46b5-9821-f40cba223fdf" />
-<img width="657" height="931" alt="Product preview card_mobile" src="https://github.com/user-attachments/assets/79709eac-58cb-4bc0-a52c-aaafc728957d" />
 
 
 ## My process
